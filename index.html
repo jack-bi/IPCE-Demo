@@ -2,757 +2,737 @@
 <html lang="">
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<title>iPCE-只有我敢，買貴退價差</title>
-<link rel="shortcut icon" href="images/favicon.png">   
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style-v2.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/memenu-v2.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="css/navbar.css" rel="stylesheet" type="text/css" media="all"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="">
-    
-<script type="application/x-javascript"> 
-    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
-</script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/uptotop.js"></script>
+	<title>iPCE-只有我敢，買貴退價差</title>
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style-v2.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/memenu-v2.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/navbar.css" rel="stylesheet" type="text/css" media="all" />
 
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="">
 
-<!--<script src="js/simpleCart.min.js"> </script>-->
-<script type="text/javascript" src="js/memenu.js"></script>
-<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
-<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/uptotop.js"></script>
+
+
+
+	<!--<script src="js/simpleCart.min.js"> </script>-->
+	<script type="text/javascript" src="js/memenu.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".memenu").memenu();
+		});
+	</script>
+	<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-    
-<body> 
-<!--header-->	
-<!--<a href="#content" class="back-to-top back-to-top1">往上</a>-->
 
-<div class="top_bg">
-	<div class="container">
-		<div class="header_top-sec">
-            <div style="width:100%">
-                <a href="index.html"><img class="logo" src="images/nav_logo.png" style="margin:0 auto"></a>
-            </div>
-<!--
-			<div class="top_right">
-                <img class="logo" src="images/nav_logo.png"  style="z-index:999 ">
-				<ul>
-					<li><a href="#">help</a></li>|
-					<li><a href="contact.html">Contact</a></li>|
-				</ul>
+<body>
+	<!--header-->
+	<!--<a href="#content" class="back-to-top back-to-top1">往上</a>-->
+
+	<div class="top_bg">
+		<div class="container">
+			<div class="header_top-sec">
+				<div style="width:100%">
+					<a href="index.html"><img class="logo" src="images/nav_logo.png" style="margin:0 auto"></a>
+				</div>
+
 			</div>
--->
-<!--
-			<div class="top_right">
-				<div style="z-index: 999;float:right">
-                    <form class="input-group input-group-sm" id="search_box">
-                      <input type="text" class="form-control" placeholder="經銷商搜尋" id="autocomplete">
-                      <span class="input-group-btn">
-                        <button class="btn btn-secondary btn-search" type="button">
-                            <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
-                        </button>
-                      </span>
-                    </form>
-                </div>
-			</div>
-            
--->
-                            <!--手機版搜尋放大鏡-->
-<!--
-                <div class="navbar-toggle icon" style="border:0; margin-right:0;">
-                    <a href="#" data-toggle="collapse" data-target="#search_xs" style="color:#FFF" aria-expanded="true">
-                        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-                    </a>
-                </div>
--->
-                <!--手機版搜尋放大鏡End-->
-                
 
-            </div>
+			<!--手機版搜尋欄-->
+			<form class="collapse navbar-collapse top_navbar" id="search_xs" ng-submit="SearchCompanySubmit()">
+				<div class="form-group has-feedback search_box">
+					<div class="input-group" style="padding-top:15px">
+						<span class="input-group-btn">
+							<button class="btn btn-secondary btn-search2" type="button"
+								style="background-color:#ddd; color:#3B2212;">
+								<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+							</button>
+						</span>
+						<input type="text" class="form-control" placeholder="經銷商搜尋" autocomplete="off"
+							id="autocomplete2">
+					</div>
+				</div>
+			</form>
+			<!--手機版搜尋欄 end-->
 
-            <!--手機版搜尋欄-->
-            <form class="collapse navbar-collapse top_navbar" id="search_xs" ng-submit="SearchCompanySubmit()">
-                <div class="form-group has-feedback search_box">
-                  <div class="input-group" style="padding-top:15px">
-                    <span class="input-group-btn">
-                            <button class="btn btn-secondary btn-search2" type="button" style="background-color:#ddd; color:#3B2212;">
-                                <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-                            </button>
-                    </span>
-                    <input type="text" class="form-control" placeholder="經銷商搜尋" autocomplete="off" id="autocomplete2">
-                  </div>
-                </div>
-            </form><!--手機版搜尋欄 end-->
-
-<!--				<div class="clearfix"> </div>-->
+			<!--				<div class="clearfix"> </div>-->
 		</div>
 	</div>
-    
-<div class="header-top">
-	 <div class="header-bottom">
-		 <div class="container">
-			
-			 <div class="top-nav">
-				<ul class="memenu skyblue"  style="width:100%">
-                    <li class="grid grid-first"><a href="SmartPCShop.html">i 選購</a></li>
-                    <li class="grid"><a href="#">i 比較</a></li>
-                    <li class="grid"><a href="#">i 環保</a></li>
-                    <li class="grid"><a href="#">i 兌換</a></li>
-                    <li class="grid"><a href="#">i 優惠</a></li>
-                    <li class="grid"><a href="#">i 訊息</a></li>
-                    <li class="grid"><a href="#">i 菜單</a></li>
-                </ul>
-                <div class="clearfix"> </div>
-            </div>
-<!--
-             <div class="menu-icon">
-				<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-			 </div>
-			 <div class="clearfix"> </div> 
--->
-                  
 
-                   <div class="menu-icon" >
-                      <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;
-                      <span class="glyphicon glyphicon-search"></span>&nbsp;
-                      <span class="glyphicon glyphicon-user"></span>
-                   </div>
+	<div class="header-top">
+		<div class="header-bottom">
+			<div class="container">
+
+				<div class="top-nav">
+					<ul class="memenu skyblue" style="width:100%">
+						<li class="grid grid-first"><a href="SmartPCShop.html">i 選購</a></li>
+						<li class="grid"><a href="#">i 比較</a></li>
+						<li class="grid"><a href="#">i 環保</a></li>
+						<li class="grid"><a href="#">i 兌換</a></li>
+						<li class="grid"><a href="#">i 優惠</a></li>
+						<li class="grid"><a href="#">i 訊息</a></li>
+						<li class="grid"><a href="#">i 菜單</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+
+				<div class="menu-icon">
+					<span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;
+					<span class="glyphicon glyphicon-search"></span>&nbsp;
+					<span class="glyphicon glyphicon-user"></span>
+				</div>
 
 
-	       </div>
-         </div>
-    </div>
+			</div>
+		</div>
+	</div>
+	<div class="bride-grids" style="margin-top:6%;">
+		<div class="container" style="border: 1px solid silver;padding:10px 0">
+			<div class="col-md-6 bride-grid">
+				<div class="content-grid l-grids">
+					<figure class="effect-bubba">
+						<iframe
+							src="https://www.youtube.com/embed/videoseries?list=PLxNBE0FIspKvaD-buiYJFzgDzE9NWJ433&loop=1&playlist=PLxNBE0FIspKvaD-buiYJFzgDzE9NWJ433?rel=0&autoplay=1"
+							style="width:100%;height:380px"></iframe>
+					</figure>
+					<div class="clearfix"></div>
+					<div class="arrival-info">
+						<h4>【3C 新品資訊】</h4>
+						<p>華芸科技推出 ADM 3.1 Beta</p>
+						<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
+					</div>
+				</div>
 
-<!--
-<div class="welcome">
-	 <div class="container">
-		 <div class="col-md-3 welcome-left">
-			 <h2>Welcome to our site</h2>
-		 </div>
-		 <div class="col-md-9 welcome-right">
-			 <h3>Proin ornare massa eu enim pretium efficitur.</h3>
-			 <p>Etiam fermentum consectetur nulla, sit amet dapibus orci sollicitudin vel. </p>
-		 </div>
-	 </div>
-</div>
--->
-<!---->
-<div class="bride-grids" style="margin-top:6%;">
-	 <div class="container" style="border: 1px solid silver;padding:10px 0">
-		 <div class="col-md-6 bride-grid">
-			 <div class="content-grid l-grids">
-				 <figure class="effect-bubba">
-						<iframe src="https://www.youtube.com/embed/videoseries?list=PLxNBE0FIspKvaD-buiYJFzgDzE9NWJ433&loop=1&playlist=PLxNBE0FIspKvaD-buiYJFzgDzE9NWJ433?rel=0&autoplay=1" style="width:100%;height:380px"></iframe>
+			</div>
 
-<!--
-						<figcaption>
-							<h4>影片主旨</h4>
-							<p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
-						</figcaption>			
--->
-				 </figure>
-				 <div class="clearfix"></div>
-            <div class="arrival-info">
-				<h4>【3C 新品資訊】</h4>
-                <p>華芸科技推出 ADM 3.1 Beta</p>
-                <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-             </div>
-            </div>
-			
-		 </div>
+			<div class="col-md-3 bride-grid">
+				<div class="content-grid l-grids">
+					<figure class="effect-bubba">
+						<iframe width="255" height="140" src="https://www.youtube.com/embed/aA7KUtEzdU0" frameborder="0"
+							allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</figure>
+					<div class="clearfix"></div>
+				</div>
 
-		 <div class="col-md-3 bride-grid">
-             <div class="content-grid l-grids">
-				 <figure class="effect-bubba">
-						<iframe width="255" height="140" src="https://www.youtube.com/embed/aA7KUtEzdU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>		
-				 </figure>	
-				 <div class="clearfix"></div>
-			 </div>
-             
-             <div class="content-grid l-grids">
-				 <figure class="effect-bubba">
-						<iframe width="255" height="140" src="https://www.youtube.com/embed/aU2hgMAja3o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>		
-				 </figure>	
-				 <div class="clearfix"></div>
-			 </div>
-			 
-			 <div class="content-grid l-grids">
-				 <figure class="effect-bubba">
-						<iframe width="255" height="140" src="https://www.youtube.com/embed/nkv4lRSmIj4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<!--
-						<figcaption>
-							<h4>Nullam molestie </h4>
-						</figcaption>			
--->
-				 </figure>	
-				 <div class="clearfix"></div>
-			 </div>
+				<div class="content-grid l-grids">
+					<figure class="effect-bubba">
+						<iframe width="255" height="140" src="https://www.youtube.com/embed/aU2hgMAja3o" frameborder="0"
+							allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</figure>
+					<div class="clearfix"></div>
+				</div>
 
-		 </div>
-		 <div class="col-md-3 bride-grid">
-            <div class="content-grid l-grids">
-			 <div class="arrival-info" style="vertical-align:middle">
-				<h4>【iPCE 工商服務】</h4>
-                <p>iPCE感謝非凡新聞報導</p>
-                <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-             </div>
-			 <hr>
-			 <div class="arrival-info" style="margin:2em 0">
-                <h4>【3C 新品資訊】</h4>
-                <p>華芸科技推出 ADM 3.1 Beta</p>
-                <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-            </div>
-			 <hr>
-			 <div class="arrival-info" style="margin:2em 0">
-                <h4>【3C 新品資訊】</h4>
-                <p>華芸科技推出 ADM 3.1 Beta</p>
-                <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-            </div>
+				<div class="content-grid l-grids">
+					<figure class="effect-bubba">
+						<iframe width="255" height="140" src="https://www.youtube.com/embed/asK2JcHIuKQ"
+							frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</figure>
+					<div class="clearfix"></div>
+				</div>
 
-		 </div>
-		 <div class="clearfix"></div>
-	 </div>
-</div>
+			</div>
+			<div class="col-md-3 bride-grid">
+				<div class="content-grid l-grids">
+					<div class="arrival-info" style="vertical-align:middle">
+						<h4>【iPCE 工商服務】</h4>
+						<p>iPCE感謝非凡新聞報導</p>
+						<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
+					</div>
+					<hr>
+					<div class="arrival-info" style="margin:2em 0">
+						<h4>【3C 新品資訊】</h4>
+						<p>華芸科技推出 ADM 3.1 Beta</p>
+						<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
+					</div>
+					<hr>
+					<div class="arrival-info" style="margin:2em 0">
+						<h4>【3C 新品資訊】</h4>
+						<p>華芸科技推出 ADM 3.1 Beta</p>
+						<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
+					</div>
 
-<div class="container" style="margin-top:3em">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-<!--
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
--->
+		<div class="container" style="margin-top:3em">
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="images/ban2.jpg">
-      </div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/ban2.jpg">
+					</div>
 
-      <div class="item">
-        <img src="images/ban3.jpg">
-      </div>
+					<div class="item">
+						<img src="images/ban3.jpg">
+					</div>
 
-     </div>
+				</div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-                
-<div class="featured">
-	 <div class="container">
-         <hr>
-		 <h3>i 優惠 ∣<span style="font-size:smaller">最新一手3C優惠內容</span> </h3>
-		 <div class="feature-grids">
-			 <div class="col-md-4 feature-grid jewel">
-				 <a href="product.html"><figure><img src="images/f3.jpg"></figure>
-					 <div class="arrival-info">
-						 <h4>【3C 活動資訊】</h4>
-						 <p>LG喜迎新年澳游趣 2／28 截止</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-			 <div class="col-md-4 feature-grid">
-				 <a href="product.html"><img src="images/f3.jpg">	
-					 <div class="arrival-info">
-						 <h4>【3C 活動資訊】</h4>
-						 <p>LG喜迎新年澳游趣 2／28 截止</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					 <a href="product.html">
-					     <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-			 <div class="col-md-4 feature-grid jewel">
-				 <a href="product.html"><img src="images/f3.jpg">	
-					 <div class="arrival-info">
-						 <h4>【3C 活動資訊】</h4>
-						 <p>LG喜迎新年澳游趣 2／28 截止</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					 <a href="product.html">
-					     <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-			        <div class="product-info-cust col-md-12">
-				        <input type="button" class="item_add items" value="看更多">	
-				    </div>													
-				    <div class="clearfix"> </div>
-			 <div class="clearfix"></div>
-		 </div>
-		 
-	 </div>
-</div>                               
-<!---->
-<div class="featured">
-    <div class="container">
-         <hr>
-		 <h3>i 推薦 ∣<span style="font-size:smaller">3C產品優惠推薦</span> </h3>
-		 <div class="feature-grids">
-			 <div class="col-md-3 feature-grid jewel">
-				 <a href="product.html"><figure><img src="images/f2.jpg"></figure>
-					 <div class="arrival-info">
-						 <h4>【3C 新品資訊】</h4>
-						 <p>華芸科技推出 ADM 3.1 Beta</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>
-			 <div class="col-md-3 feature-grid">
-				 <a href="product.html"><img src="images/f2.jpg">	
-					 <div class="arrival-info">
-						 <h4>【3C 新品資訊】</h4>
-						 <p>華芸科技推出 ADM 3.1 Beta</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					 <a href="product.html">
-					     <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-			 <div class="col-md-3 feature-grid jewel">
-				 <a href="product.html"><img src="images/f2.jpg">	
-					 <div class="arrival-info">
-						 <h4>【3C 新品資訊】</h4>
-						 <p>華芸科技推出 ADM 3.1 Beta</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					 <a href="product.html">
-					     <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-			 <div class="col-md-3 feature-grid jewel">
-				 <a href="product.html"><img src="images/f2.jpg">	
-					 <div class="arrival-info">
-						 <h4>【3C 新品資訊】</h4>
-						 <p>華芸科技推出 ADM 3.1 Beta</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-                    <div class="product-info-cust col-md-12">
-				        <input type="button" class="item_add items" value="看更多">	
-				    </div>													
-				    <div class="clearfix"> </div>
-			 <div class="clearfix"></div>
-		 </div>
-		 
-	 </div>
-</div>
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
 
-<!---->
-<div class="featured">
-    <div class="container">
-         <hr>
-		 <h3>i 推薦 ∣<span style="font-size:smaller">3C產品優惠推薦</span> </h3>
-		 <div class="feature-grids">
-			 <div class="col-md-4 feature-grid jewel">
-				 <a href="product.html"><figure><img src="images/f1.jpg"></figure>
-					 <div class="arrival-info">
-						 <h4>【3C 新品資訊】</h4>
-						 <p>華芸科技推出 ADM 3.1 Beta</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>
-			 <div class="col-md-4 feature-grid">
-				 <a href="product.html"><img src="images/f1.jpg">	
-					 <div class="arrival-info">
-						 <h4>【3C 新品資訊】</h4>
-						 <p>華芸科技推出 ADM 3.1 Beta</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					 <a href="product.html">
-					     <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-			 <div class="col-md-4 feature-grid jewel">
-				 <a href="product.html"><img src="images/f1.jpg">	
-					 <div class="arrival-info">
-						 <h4>【3C 新品資訊】</h4>
-						 <p>華芸科技推出 ADM 3.1 Beta</p>
-						 <span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT 檔案系統支援，推.......</span>
-					 </div>
-					 <div class="viw">
-					 <a href="product.html">
-					     <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div></a>
-			 </div>
-                    <div class="product-info-cust col-md-12">
-				        <input type="button" class="item_add items" value="看更多">	
-				    </div>													
-				    <div class="clearfix"> </div>
-			 <div class="clearfix"></div>
-		 </div>
-		 
-	 </div>
-</div>
-<!-------->
-<!---->
-<div class="arrivals">
-	 <div class="container">	
-         <hr>
-         <h3>i 菜單 ∣<span style="font-size:smaller">優質特選電腦菜單</span> </h3>
-            <div class="arrival-grids ">			 
-			 <ul id="flexiselDemo1">
-				 <li style="position: relative;border: 1px solid silver;">
-				    <a href="product.html"> <img src="images/f1.jpg">	
-                        <div class="arrival-info">						 
-                         <p>【PPT人氣推薦】</p>
-						 <span class="disc1">．超強效強物美價廉</span><br>
-				         <span class="disc1">．玩遊戲不卡卡</span><br>
-				         <span class="disc1">．適合桌機高效能遊戲</span><br>
-                         <span class="disc2">讚：500</span><br>    
-					    </div>
-					 <div class="viw">
-						<a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                    </a>
-				 </li>
-				 <li style="position: relative;border: 1px solid silver;">
-				    <a href="product.html"> <img src="images/f1.jpg">	
-                        <div class="arrival-info">						 
-                         <p>【PPT人氣推薦】</p>
-						 <span class="disc1">．超強效強物美價廉</span><br>
-				         <span class="disc1">．玩遊戲不卡卡</span><br>
-				         <span class="disc1">．適合桌機高效能遊戲</span><br>
-                         <span class="disc2">讚：500</span><br>    
-					    </div>
-					 <div class="viw">
-						<a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                    </a>
-				 </li>
-				 <li style="position: relative;border: 1px solid silver;">
-				    <a href="product.html"> <img src="images/f1.jpg">	
-                        <div class="arrival-info">						 
-                         <p>【PPT人氣推薦】</p>
-						 <span class="disc1">．超強效強物美價廉</span><br>
-				         <span class="disc1">．玩遊戲不卡卡</span><br>
-				         <span class="disc1">．適合桌機高效能遊戲</span><br>
-                         <span class="disc2">讚：500</span><br>    
-					    </div>
-					 <div class="viw">
-						<a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                    </a>
-				 </li>
-				</ul>
-				
-				<div class="product-info-cust col-md-12">
-                    <input type="button" class="item_add items" value="看更多">&nbsp;&nbsp;&nbsp;&nbsp;	
-                    <input type="button" class="item_add items" value="我要推薦">	
-                </div>
-		  </div>
-	 </div>
-</div>
+		<div class="featured">
+			<div class="container">
+				<hr>
+				<h3>i 優惠 ∣<span style="font-size:smaller">最新一手3C優惠內容</span> </h3>
+				<div class="feature-grids">
+					<div class="col-md-4 feature-grid jewel">
+						<a href="product.html">
+							<figure><img src="images/f3.jpg"></figure>
+							<div class="arrival-info">
+								<h4>【3C 活動資訊】</h4>
+								<p>LG喜迎新年澳游趣 2／28 截止</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 feature-grid">
+						<a href="product.html"><img src="images/f3.jpg">
+							<div class="arrival-info">
+								<h4>【3C 活動資訊】</h4>
+								<p>LG喜迎新年澳游趣 2／28 截止</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 feature-grid jewel">
+						<a href="product.html"><img src="images/f3.jpg">
+							<div class="arrival-info">
+								<h4>【3C 活動資訊】</h4>
+								<p>LG喜迎新年澳游趣 2／28 截止</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="product-info-cust col-md-12">
+						<input type="button" class="item_add items" value="看更多">
+					</div>
+					<div class="clearfix"> </div>
+					<div class="clearfix"></div>
+				</div>
 
-<div class="featured">
-    <div class="container">
-         <hr>
-		 <h3> i 門市 ∣ 超優質店家資訊 
-		 <div style="float:right;margin-right:1%">		 
-        <input type="button" class="item_add item_small items " value="北">
-         <input type="button" class="item_add item_small items " value="桃竹">
-		 <input type="button" class="item_add item_small items " value="中">
-        <input type="button" class="item_add item_small items " value="南">
-        </div>
+			</div>
+		</div>
+		<!---->
+		<div class="featured">
+			<div class="container">
+				<hr>
+				<h3>i 推薦 ∣<span style="font-size:smaller">3C產品優惠推薦</span> </h3>
+				<div class="feature-grids">
+					<div class="col-md-3 feature-grid jewel">
+						<a href="product.html">
+							<figure><img src="images/f2.jpg"></figure>
+							<div class="arrival-info">
+								<h4>【3C 新品資訊】</h4>
+								<p>華芸科技推出 ADM 3.1 Beta</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 feature-grid">
+						<a href="product.html"><img src="images/f2.jpg">
+							<div class="arrival-info">
+								<h4>【3C 新品資訊】</h4>
+								<p>華芸科技推出 ADM 3.1 Beta</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 feature-grid jewel">
+						<a href="product.html"><img src="images/f2.jpg">
+							<div class="arrival-info">
+								<h4>【3C 新品資訊】</h4>
+								<p>華芸科技推出 ADM 3.1 Beta</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 feature-grid jewel">
+						<a href="product.html"><img src="images/f2.jpg">
+							<div class="arrival-info">
+								<h4>【3C 新品資訊】</h4>
+								<p>華芸科技推出 ADM 3.1 Beta</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="product-info-cust col-md-12">
+						<input type="button" class="item_add items" value="看更多">
+					</div>
+					<div class="clearfix"> </div>
+					<div class="clearfix"></div>
+				</div>
 
-</h3>
-<!--                   <div class="product-info-cust col-md-12">-->
-<!--                </div>-->
-		 <div class="feature-grids">
-             <div class="col-md-2 feature-grid">
-				 <a href="product.html"><figure><img src="images/f2.jpg"></figure>
-					 <div class="arrival-info">
-						 <p>XXXX門市</p>
-                         <span class="disc1">電話：02-12345678</span><br>
-						 <span class="disc1">地址：台北市XXXXXXXXX</span><br>
-						 <span class="disc2">讚：500 我要分享</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>
-			 <div class="col-md-2 feature-grid">
-				 <a href="product.html"><figure><img src="images/f2.jpg"></figure>
-					 <div class="arrival-info">
-						 <p>XXXX門市</p>
-                         <span class="disc1">電話：02-12345678</span><br>
-						 <span class="disc1">地址：台北市XXXXXXXXX</span><br>
-						 <span class="disc2">讚：500 我要分享</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>
-            <div class="col-md-2 feature-grid">
-				 <a href="product.html"><figure><img src="images/f2.jpg"></figure>
-					 <div class="arrival-info">
-						 <p>XXXX門市</p>
-                         <span class="disc1">電話：02-12345678</span><br>
-						 <span class="disc1">地址：台北市XXXXXXXXX</span><br>
-						 <span class="disc2">讚：500 我要分享</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>				 
-                 
-			 <div class="col-md-2 feature-grid">
-				 <a href="product.html"><figure><img src="images/f2.jpg"></figure>
-					 <div class="arrival-info">
-						 <p>XXXX門市</p>
-                         <span class="disc1">電話：02-12345678</span><br>
-						 <span class="disc1">地址：台北市XXXXXXXXX</span><br>
-						 <span class="disc2">讚：500 我要分享</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>
-			 <div class="col-md-2 feature-grid">
-				 <a href="product.html"><figure><img src="images/f2.jpg"></figure>
-					 <div class="arrival-info">
-						 <p>XXXX門市</p>
-                         <span class="disc1">電話：02-12345678</span><br>
-						 <span class="disc1">地址：台北市XXXXXXXXX</span><br>
-						 <span class="disc2">讚：500 我要分享</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>
-			 <div class="col-md-2 feature-grid">
-				 <a href="product.html"><figure><img src="images/f2.jpg"></figure>
-					 <div class="arrival-info">
-						 <p>XXXX門市</p>
-                         <span class="disc1">電話：02-12345678</span><br>
-						 <span class="disc1">地址：台北市XXXXXXXXX</span><br>
-						 <span class="disc2">讚：500 我要分享</span>
-					 </div>
-					 <div class="viw">
-					   <a href="product.html">
-					   <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
-					 </div>
-					 <div class="shrt">
-						<a href="product.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>我要推薦</a>
-					 </div>
-                 </a>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>
-		 
-	 </div>
-</div>
+			</div>
+		</div>
 
-        <footer class="container">
-            <hr>
-            <div class="row footer_menu">
-                <div class="left">
-                    <ul class="bottom-menu list-inline">
-                        <li class="li1" style="padding:0 10px 0 0;">
-                            &nbsp;操作說明</li>
-                        <li class="li2 top">
-                            <a href="" style="text-decoration:none">．新手買電腦</a></li>
-                        <li>
-                        <li><a href="" style="text-decoration:none">．智慧選電腦</a></li>
-                        <li><a href="" style="text-decoration:none">．i比較</a></li>
-                        <li><a href="" style="text-decoration:none">．i計較</a></li>
-                        <li><a href="" style="text-decoration:none">．i優惠</a></li>
-<!--
-                        <li style="display:inline;position:relative;">
-                        <a href="#" data-toggle="modal" data-target="#DP00">經銷商頁面</a></li>
--->
-                    </ul>
-                     <ul class="bottom-menu list-inline">
-                         <li class="li1" style="padding:0 10px 0 0;">
-                            &nbsp;網站介紹</li>
-                        <li><a href="" style="text-decoration:none">．何謂iPCE</a></li>
-                        <li><a href="" style="text-decoration:none">．如何使用iPCE</a></li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <ul class="bottom-menu list-inline">
-                        <li class="li1" style="padding:0 10px 0 0;">
-                            &nbsp;帳戶管理</li>
-                        <li><a href="" style="text-decoration:none">．問與答</a></li>
-                        <li><a href="" style="text-decoration:none">．訂單查詢</a></li>
-                        <li><a href="" style="text-decoration:none">．後台登入</a></li>
-                    </ul>
-                   
-                </div>
-            </div>
-            <hr>
-        <div class="copyright">
-            <div class="left">
-                <ul class="list-inline">
-                    <li>Copyright © 2018 Saintmen iPCE All rights reserved. <a href="PrivacyPolicy.html"> | 隱私權政策 |  </a><a href="UseTerms.html">| 使用條款 |  </a></li>
-                    
-                </ul>
-            </div>
-            <div class="right">
-                <strong>
-                    <ul class="list-inline">
-                        <li>客服專線：0800-000-234</li>
-                        <li>客服信箱: <a href="mailto:ipce@saintmen.com">iPCE@saintmen.com</a></li>
-                    </ul>
-                </strong>
-            </div>
-        </div>
-    </footer>
-    
-<!--<input type="image" class="touchman gray-tooltip back-to-top" a href="#content" src="images/ipce-man.png" title="iPCE線上客服 09:30~18:30" data-toggle="tooltip" data-placement="bottom">-->
-    
-  <nav class="side-menu">
-    <ul>
-      <li><a href=""><img src="images/icon-1.png" style="width:70px;padding:0%"></a></li>
-      <li><a href=""><img src="images/icon-2.png" style="width:70px;padding:0%"></a></li>
-      <li><a href=""><img src="images/icon-3.png" style="width:70px;padding:0%"></a></li>
-      <li  class="back-to-top"><a href=""><img src="images/icon-4.png" style="width:70px;padding:0%"></a></li>
+		<!---->
+		<div class="featured">
+			<div class="container">
+				<hr>
+				<h3>i 推薦 ∣<span style="font-size:smaller">3C產品優惠推薦</span> </h3>
+				<div class="feature-grids">
+					<div class="col-md-4 feature-grid jewel">
+						<a href="product.html">
+							<figure><img src="images/f1.jpg"></figure>
+							<div class="arrival-info">
+								<h4>【3C 新品資訊】</h4>
+								<p>華芸科技推出 ADM 3.1 Beta</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 feature-grid">
+						<a href="product.html"><img src="images/f1.jpg">
+							<div class="arrival-info">
+								<h4>【3C 新品資訊】</h4>
+								<p>華芸科技推出 ADM 3.1 Beta</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 feature-grid jewel">
+						<a href="product.html"><img src="images/f1.jpg">
+							<div class="arrival-info">
+								<h4>【3C 新品資訊】</h4>
+								<p>華芸科技推出 ADM 3.1 Beta</p>
+								<span class="disc">華芸科技 (ASUSTOR Inc.) 與微軟攜手合作，為 ASUSTOR NAS 用戶擴增 exFAT
+									檔案系統支援，推.......</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="product-info-cust col-md-12">
+						<input type="button" class="item_add items" value="看更多">
+					</div>
+					<div class="clearfix"> </div>
+					<div class="clearfix"></div>
+				</div>
 
-    </ul>
-  </nav>
-<!--
- <div class="copywrite">
-	 <div class="container">
-			 <p>Copyright © 2015 Wedding Store All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-		 </div>
-</div>
--->
-				<script type="text/javascript">
-				 $(window).load(function() {			
-				  $("#flexiselDemo1").flexisel({
+			</div>
+		</div>
+		<!-------->
+		<!---->
+		<div class="arrivals">
+			<div class="container">
+				<hr>
+				<h3>i 菜單 ∣<span style="font-size:smaller">優質特選電腦菜單</span> </h3>
+				<div class="arrival-grids ">
+					<ul id="flexiselDemo1">
+						<li style="position: relative;border: 1px solid silver;">
+							<a href="product.html"> <img src="images/f1.jpg">
+								<div class="arrival-info">
+									<p>【PPT人氣推薦】</p>
+									<span class="disc1">．超強效強物美價廉</span><br>
+									<span class="disc1">．玩遊戲不卡卡</span><br>
+									<span class="disc1">．適合桌機高效能遊戲</span><br>
+									<span class="disc2">讚：500</span><br>
+								</div>
+								<div class="viw">
+									<a href="#"><span class="glyphicon glyphicon-eye-open"
+											aria-hidden="true"></span>看更多</a>
+								</div>
+								<div class="shrt">
+									<a href="#"><span class="glyphicon glyphicon-star"
+											aria-hidden="true"></span>我要推薦</a>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;border: 1px solid silver;">
+							<a href="product.html"> <img src="images/f1.jpg">
+								<div class="arrival-info">
+									<p>【PPT人氣推薦】</p>
+									<span class="disc1">．超強效強物美價廉</span><br>
+									<span class="disc1">．玩遊戲不卡卡</span><br>
+									<span class="disc1">．適合桌機高效能遊戲</span><br>
+									<span class="disc2">讚：500</span><br>
+								</div>
+								<div class="viw">
+									<a href="#"><span class="glyphicon glyphicon-eye-open"
+											aria-hidden="true"></span>看更多</a>
+								</div>
+								<div class="shrt">
+									<a href="#"><span class="glyphicon glyphicon-star"
+											aria-hidden="true"></span>我要推薦</a>
+								</div>
+							</a>
+						</li>
+						<li style="position: relative;border: 1px solid silver;">
+							<a href="product.html"> <img src="images/f1.jpg">
+								<div class="arrival-info">
+									<p>【PPT人氣推薦】</p>
+									<span class="disc1">．超強效強物美價廉</span><br>
+									<span class="disc1">．玩遊戲不卡卡</span><br>
+									<span class="disc1">．適合桌機高效能遊戲</span><br>
+									<span class="disc2">讚：500</span><br>
+								</div>
+								<div class="viw">
+									<a href="#"><span class="glyphicon glyphicon-eye-open"
+											aria-hidden="true"></span>看更多</a>
+								</div>
+								<div class="shrt">
+									<a href="#"><span class="glyphicon glyphicon-star"
+											aria-hidden="true"></span>我要推薦</a>
+								</div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="product-info-cust col-md-12">
+						<input type="button" class="item_add items" value="看更多">&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="button" class="item_add items" value="我要推薦">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="featured">
+			<div class="container">
+				<hr>
+				<h3> i 門市 ∣ 超優質店家資訊
+					<div style="float:right;margin-right:1%">
+						<input type="button" class="item_add item_small items " value="北">
+						<input type="button" class="item_add item_small items " value="桃竹">
+						<input type="button" class="item_add item_small items " value="中">
+						<input type="button" class="item_add item_small items " value="南">
+					</div>
+
+				</h3>
+				<!--                   <div class="product-info-cust col-md-12">-->
+				<!--                </div>-->
+				<div class="feature-grids">
+					<div class="col-md-2 feature-grid">
+						<a href="product.html">
+							<figure><img src="images/f2.jpg"></figure>
+							<div class="arrival-info">
+								<p>XXXX門市</p>
+								<span class="disc1">電話：02-12345678</span><br>
+								<span class="disc1">地址：台北市XXXXXXXXX</span><br>
+								<span class="disc2">讚：500 我要分享</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 feature-grid">
+						<a href="product.html">
+							<figure><img src="images/f2.jpg"></figure>
+							<div class="arrival-info">
+								<p>XXXX門市</p>
+								<span class="disc1">電話：02-12345678</span><br>
+								<span class="disc1">地址：台北市XXXXXXXXX</span><br>
+								<span class="disc2">讚：500 我要分享</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 feature-grid">
+						<a href="product.html">
+							<figure><img src="images/f2.jpg"></figure>
+							<div class="arrival-info">
+								<p>XXXX門市</p>
+								<span class="disc1">電話：02-12345678</span><br>
+								<span class="disc1">地址：台北市XXXXXXXXX</span><br>
+								<span class="disc2">讚：500 我要分享</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-2 feature-grid">
+						<a href="product.html">
+							<figure><img src="images/f2.jpg"></figure>
+							<div class="arrival-info">
+								<p>XXXX門市</p>
+								<span class="disc1">電話：02-12345678</span><br>
+								<span class="disc1">地址：台北市XXXXXXXXX</span><br>
+								<span class="disc2">讚：500 我要分享</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 feature-grid">
+						<a href="product.html">
+							<figure><img src="images/f2.jpg"></figure>
+							<div class="arrival-info">
+								<p>XXXX門市</p>
+								<span class="disc1">電話：02-12345678</span><br>
+								<span class="disc1">地址：台北市XXXXXXXXX</span><br>
+								<span class="disc2">讚：500 我要分享</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 feature-grid">
+						<a href="product.html">
+							<figure><img src="images/f2.jpg"></figure>
+							<div class="arrival-info">
+								<p>XXXX門市</p>
+								<span class="disc1">電話：02-12345678</span><br>
+								<span class="disc1">地址：台北市XXXXXXXXX</span><br>
+								<span class="disc2">讚：500 我要分享</span>
+							</div>
+							<div class="viw">
+								<a href="product.html">
+									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>看更多</a>
+							</div>
+							<div class="shrt">
+								<a href="product.html"><span class="glyphicon glyphicon-star"
+										aria-hidden="true"></span>我要推薦</a>
+							</div>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="container">
+			<hr>
+			<div class="row footer_menu">
+				<div class="left">
+					<ul class="bottom-menu list-inline">
+						<li class="li1" style="padding:0 10px 0 0;">
+							&nbsp;操作說明</li>
+						<li class="li2 top">
+							<a href="" style="text-decoration:none">．新手買電腦</a></li>
+						<li>
+						<li><a href="" style="text-decoration:none">．智慧選電腦</a></li>
+						<li><a href="" style="text-decoration:none">．i比較</a></li>
+						<li><a href="" style="text-decoration:none">．i計較</a></li>
+						<li><a href="" style="text-decoration:none">．i優惠</a></li>
+					</ul>
+					<ul class="bottom-menu list-inline">
+						<li class="li1" style="padding:0 10px 0 0;">
+							&nbsp;網站介紹</li>
+						<li><a href="" style="text-decoration:none">．何謂iPCE</a></li>
+						<li><a href="" style="text-decoration:none">．如何使用iPCE</a></li>
+					</ul>
+				</div>
+				<div class="right">
+					<ul class="bottom-menu list-inline">
+						<li class="li1" style="padding:0 10px 0 0;">
+							&nbsp;帳戶管理</li>
+						<li><a href="" style="text-decoration:none">．問與答</a></li>
+						<li><a href="" style="text-decoration:none">．訂單查詢</a></li>
+						<li><a href="" style="text-decoration:none">．後台登入</a></li>
+					</ul>
+
+				</div>
+			</div>
+			<hr>
+			<div class="copyright">
+				<div class="left">
+					<ul class="list-inline">
+						<li>Copyright © 2018 Saintmen iPCE All rights reserved. <a href="PrivacyPolicy.html"> | 隱私權政策 |
+								 </a><a href="UseTerms.html">| 使用條款 |  </a></li>
+
+					</ul>
+				</div>
+				<div class="right">
+					<strong>
+						<ul class="list-inline">
+							<li>客服專線：0800-000-234</li>
+							<li>客服信箱: <a href="mailto:ipce@saintmen.com">iPCE@saintmen.com</a></li>
+						</ul>
+					</strong>
+				</div>
+			</div>
+		</footer>
+
+		<nav class="side-menu">
+			<ul>
+				<li><a href=""><img src="images/icon-1.png" style="width:70px;padding:0%"></a></li>
+				<li><a href=""><img src="images/icon-2.png" style="width:70px;padding:0%"></a></li>
+				<li><a href=""><img src="images/icon-3.png" style="width:70px;padding:0%"></a></li>
+				<li class="back-to-top"><a href=""><img src="images/icon-4.png" style="width:70px;padding:0%"></a></li>
+
+			</ul>
+		</nav>
+		<script type="text/javascript">
+			$(window).load(function () {
+				$("#flexiselDemo1").flexisel({
 					visibleItems: 4.5,
 					animationSpeed: 500,
 					autoPlay: false,
-					autoPlaySpeed: 3000,    		
-					pauseOnHover:true,
+					autoPlaySpeed: 3000,
+					pauseOnHover: true,
 					enableResponsiveBreakpoints: true,
-					responsiveBreakpoints: { 
-						portrait: { 
-							changePoint:480,
+					responsiveBreakpoints: {
+						portrait: {
+							changePoint: 480,
 							visibleItems: 1
-						}, 
-						landscape: { 
-							changePoint:640,
+						},
+						landscape: {
+							changePoint: 640,
 							visibleItems: 2
 						},
-						tablet: { 
-							changePoint:768,
+						tablet: {
+							changePoint: 768,
 							visibleItems: 3
 						}
 					}
-				  });
 				});
-				</script>
-				<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-    </div>		
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	</div>
 </body>
+
 </html>
